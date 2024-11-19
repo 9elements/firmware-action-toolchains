@@ -1,0 +1,28 @@
+bugfix:
+  - head-branch:
+      - '^fix'
+github_actions:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - '.github/workflows/**'
+      - head-branch:
+          - '^ci'
+coreboot:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - 'coreboot/**'
+testing:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - '.cspell.json'
+              - '.mega-linter.yml'
+      - head-branch:
+          - '^test'
+feature:
+  - any:
+      - head-branch:
+          - '^feat'
+          - '^feature'
