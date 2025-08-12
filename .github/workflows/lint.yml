@@ -29,7 +29,7 @@ jobs:
     # Skip if pull_request_review on PR not made by a bot
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - name: Commit-Lint
@@ -42,7 +42,7 @@ jobs:
     # Skip if pull_request_review on PR not made by a bot
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - name: MegaLinter
